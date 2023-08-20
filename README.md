@@ -1,3 +1,9 @@
+<p align="center">
+  <a>
+    <img src="header_image.png" width="512px" alt="Our and SuperAGI logo" />
+  </a>
+</p>
+
 # HR-AGI-Tool Repository
 Welcome to the HR-AGI-Tool repository! This project represents a groundbreaking initiative with the goal of transforming the landscape of autonomous agent interactions within Human Resource tasks. By enabling the evaluation of job candidates in advance of human intervention, this repository introduces a paradigm shift that significantly reduces processing time while elevating the overall quality of candidate assessment.
 
