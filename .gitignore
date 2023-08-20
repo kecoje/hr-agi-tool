@@ -1,0 +1,52 @@
+# Node.js related files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local development files
+.env
+
+# Dependency directories
+/src/oldServer.ts
+/_assets/
+/dist/
+/build/
+
+# Logs
+logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor specific files
+.vscode/
+.idea/
+
+# Compiled binary addons
+/build/Release
+
+# Testing
+/coverage
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# IDE and editor settings
+*.iml
+*.idea/
+*.vscode/
+
+# Build output
+/out/
+
+# Compiled output
+/build/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# End of file

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF File Upload</title>
+</head>
+
+<body>
+    <h1>Upload a CV PDF File and enter the Job Position</h1>
+    <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+        <input style="display: block; margin-top: 1rem;" type="file" name="pdfFile" accept=".pdf" required />
+        <input style="display: block; width: 30rem; margin-top: 1rem;" type="text" name="jobPosition" placeholder="Enter text" required />
+        <input style="display: block; margin-top: 1rem;" type="submit" value="Get my evaluation">
+    </form>
+
+    <div style="margin-top: 1rem">
+        <textarea name="output" id="output" cols="100" rows="10"></textarea>
+    </div>
+
+    <!-- <div style="width: 100%; height: 50rem;">
+        <iframe id="my-iframe" src="initial-url"></iframe>
+    </div> -->
+
+    <script>
+        const uploadForm = document.getElementById('uploadForm');
+
+        uploadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(uploadForm);
+
+            fetch('/execute', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    var outputTextarea = document.getElementById("output");
+                    outputTextarea.value = JSON.stringify(data.data.jsonOut, null, 2);
+                    // var iframe = document.getElementById("my-iframe");
+                    // iframe.src = data.data.linked_in_url;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        });
+    </script>
+</body>
+
+</html>
