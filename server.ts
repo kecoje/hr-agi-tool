@@ -173,8 +173,8 @@ const port = 8800;
 const secure_port = 8800;
 
 if (process.env.NODE_ENV == 'production') {
-    var privateKey = fs.readFileSync('./api/ssl/private.key', 'utf8');
-    var certificate = fs.readFileSync('./api/ssl/chainedCertificate.crt', 'utf8');
+    var privateKey = fs.readFileSync('./ssl/private.key', 'utf8');
+    var certificate = fs.readFileSync('./ssl/chainedCertificate.crt', 'utf8');
     var credentials = { key: privateKey, cert: certificate };
 
     var httpsServer = https.createServer(credentials, app);

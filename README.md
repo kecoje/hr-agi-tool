@@ -5,7 +5,14 @@
 </p>
 
 # HR-AGI-Tool Repository
-Welcome to the HR-AGI-Tool repository! This project represents a groundbreaking initiative with the goal of transforming the landscape of autonomous agent interactions within Human Resource tasks. By enabling the evaluation of job candidates in advance of human intervention, this repository introduces a paradigm shift that significantly reduces processing time while elevating the overall quality of candidate assessment.
+Welcome to the HR-AGI-Tool repository! This project aims to revolutionize the way autonomous agents interact with Human Resource tasks. Evaluating a job candidate before a human can reduce working time, and this repository offers a comprehensive solution to streamline and enhance this process.
+
+Thanks to [lablab.ai](https://lablab.ai) and [SuperAGI](https://lablab.ai/tech/superagi) we joined [this hackathon](https://lablab.ai/event/autonomous-agents-hackathon) to push the boundaries of innovation and leverage cutting-edge Autonomous AI Agents such as SuperAGI :)
+
+## Collaborators (Team Agi Gods)
+
+[<img src="https://avatars.githubusercontent.com/gajojr?s=150" width="100" height="100">](https://github.com/gajojr) [<img src="https://avatars.githubusercontent.com/Scripter802?s=150" width="100" height="100">](https://github.com/Scripter802) [<img src="https://avatars.githubusercontent.com/uros-mijajlovic?s=150" width="100" height="100">](https://github.com/uros-mijajlovic) [<img src="https://avatars.githubusercontent.com/kecoje?s=150" width="100" height="100">](https://github.com/kecoje)
+
 
 ---
 
@@ -34,15 +41,24 @@ git clone https://github.com/kecoje/hr-agi-tool.git
 npm install
 ```
 
-3. Data Preparation: Prepare the candidate data (pdf file) and job data (job description)
+3. Environmet setup: Create a file named .env in the root of the project with theese environmental variables:
 
-4. Run the AGI Tool: Execute the demo server:
+```
+OPENAI_API_ORG = <YOUR-OPENAI-ORGANIZATION-ID>
+OPENAI_API_KEY = <YOUR-OPENAI-API-KEY>
+NODE_ENV = development
+
+```
+
+4. Data Preparation: Prepare the candidate data (pdf file) and job data (job description)
+
+5. Run the AGI Tool: Execute the demo server:
 
 ```
 npm run dev
 ```
 
-5. Review Results: Once the tool completes its evaluation, review the generated candidate reports in the designated output directory. These reports contain valuable insights that can aid in the decision-making process.
+6. Review Results: Once the tool completes its evaluation, review the generated candidate reports in the designated output directory. These reports contain valuable insights that can aid in the decision-making process.
 
 ## Contributions and Feedback
 We welcome contributions from the community to enhance and expand the capabilities of the HR-AGI-Tool. If you have ideas for improvement or would like to report issues, please feel free to open an issue or submit a pull request.
