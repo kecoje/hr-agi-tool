@@ -10,7 +10,7 @@ Welcome to the HR-AGI-Tool repository! This project aims to revolutionize the wa
 
 Thanks to [lablab.ai](https://lablab.ai) and [SuperAGI](https://lablab.ai/tech/superagi) we joined [this hackathon](https://lablab.ai/event/autonomous-agents-hackathon) to push the boundaries of innovation and leverage cutting-edge Autonomous AI Agents such as SuperAGI :)
 
-## Collaborators (Team Agi Gods)
+## Collaborators (Team AGI Gods)
 
 [<img src="https://avatars.githubusercontent.com/gajojr?s=150" width="100" height="100">](https://github.com/gajojr) [<img src="https://avatars.githubusercontent.com/Scripter802?s=150" width="100" height="100">](https://github.com/Scripter802) [<img src="https://avatars.githubusercontent.com/uros-mijajlovic?s=150" width="100" height="100">](https://github.com/uros-mijajlovic) [<img src="https://avatars.githubusercontent.com/kecoje?s=150" width="100" height="100">](https://github.com/kecoje)
 
@@ -55,10 +55,10 @@ NODE_ENV = development
 
 4. Data Preparation: Prepare the candidate data (pdf file) and job data (job description)
 
-5. Run the AGI Tool: Execute the demo server:
+5. Run the AGI Tool: Execute the demo server and client:
 
 ```
-npm run serve
+npm run dev
 ```
 
 6. Review Results: Once the tool completes its evaluation, review the generated candidate reports in the designated output directory. These reports contain valuable insights that can aid in the decision-making process.
