@@ -10,7 +10,9 @@
         "watch": "tsc --watch",
         "lint": "eslint src --ext .ts",
         "test": "jest",
-        "serve": "nodemon server.ts"
+        "serve": "nodemon server.ts",
+        "start:frontend": "cd hr-helper && npm start",
+        "dev": "concurrently \"npm run serve\" \"npm run start:frontend\""
     },
     "keywords": [
         "typescript",
@@ -39,6 +41,7 @@
         "@types/node": "^16.10.5",
         "@types/pdf-parse": "^1.1.1",
         "@types/puppeteer": "^7.0.4",
+        "concurrently": "^8.2.0",
         "eslint": "^8.0.1",
         "jest": "^27.0.6",
         "ts-jest": "^27.0.5",
